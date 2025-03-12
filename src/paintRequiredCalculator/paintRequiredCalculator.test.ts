@@ -6,8 +6,12 @@ describe("paint required calculator", () => {
 
     expect(result).toEqual(5);
   });
-  test.todo("should throw an error when entered area is negative");
-  test.todo("should throw an error when entered coveragePerLiter value is negative");
+  test("should throw an error when entered area is negative", () => {
+      expect(() => paintRequiredCalculator(-50, 10)).toThrow("area should be possitive");
+    });
+  test("should throw an error when entered coveragePerLiter value is negative", () => {
+      expect(() => paintRequiredCalculator(50, -10)).toThrow("coveragePerLiter value should be possitive");
+    });
   test.todo("should throw an error when entered area is zero");
   test.todo("should throw an error when coveragePerLiter value is zero.");
   test.todo("should give correct result for decimal area");
