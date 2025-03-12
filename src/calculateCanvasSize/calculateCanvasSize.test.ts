@@ -18,6 +18,5 @@ describe("calculateCanvasSize", () => {
   test("should throw an error when entered width of Canvas is zero", () => {
     expect(() => calculateCanvasSize("10", "0")).toThrow("width should not be zero");
   });
-  test.todo("should give correct result for decimal length");
-  test.todo("should give correct resultt for decimal width");
+
 });
