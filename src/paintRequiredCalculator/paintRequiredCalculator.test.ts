@@ -6,4 +6,5 @@ describe("paint required calculator", () => {
 
     expect(result).toEqual(5);
   });
+  
 });
