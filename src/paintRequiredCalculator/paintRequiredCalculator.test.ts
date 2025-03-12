@@ -8,6 +8,7 @@ describe("paint required calculator", () => {
   });
   test.todo("should throw an error when entered area is negative");
   test.todo("should throw an error when entered coveragePerLiter value is negative");
+  test.todo("should throw an error when entered area is zero");
   test.todo("should throw an error when coveragePerLiter value is zero.");
   test.todo("should give correct result for decimal area");
   test.todo("should give correct resultt for decimal coveragePerLiter ");
