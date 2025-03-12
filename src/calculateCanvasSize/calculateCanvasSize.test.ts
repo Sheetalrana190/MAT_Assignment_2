@@ -12,8 +12,12 @@ describe("calculateCanvasSize", () => {
   test("should throw an error when entered width of Canvas is negative", () => {
     expect(() => calculateCanvasSize("10", "-100")).toThrow("Canvas width should be possitive");
   });
-  test.todo("should throw an error when entered length of Canvas is zero");
-  test.todo("should throw an error when entered width of Canvas is zero");
+  test("should throw an error when entered length of Canvas is zero", () => {
+    expect(() => calculateCanvasSize("0", "-100")).toThrow("Length should not be zero");
+  });
+  test("should throw an error when entered width of Canvas is zero", () => {
+    expect(() => calculateCanvasSize("10", "0")).toThrow("width should not be zero");
+  });
   test.todo("should give correct result for decimal length");
   test.todo("should give correct resultt for decimal width");
 });
